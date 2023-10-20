@@ -1,0 +1,120 @@
+<app-pageheader></app-pageheader>
+
+<div class="container mt-5 mb-5">
+  <div class="row">
+      <div class="col-lg-6" *ngIf="boutiques">
+          <a routerLink="../../detailsboutiques" class="btn btn-sm btn-dark mb-3 ">Back</a>
+          <h2>Détails boutique : <span>{{selectedBoutiques?.boutiquetitle}}</span></h2>
+      </div>
+          <div class="row">
+              <div class="col-md-4">
+                  <img src="{{selectedBoutiques?.images}}" width="320" height="240" />
+              </div>
+              <div class="col-md-6">
+                  <p class="description">{{selectedBoutiques?.boutiquedescription}}</p>
+              </div>
+     
+      </div>
+
+
+
+      <div  class="row" >
+
+          <div>
+          <h2>Informations sur la boutique: <span>{{selectedBoutiques?.boutiquetitle}}</span></h2>
+          </div>
+          
+          <div class="col-md-2">
+            <img [src]="selectedBoutiques?.informations.photo">
+          </div>
+          
+      <div class="col-md-10">
+          <ul class="sidebar-list">
+              <li>
+                 
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-1x"></i>
+                    <i class="fas fa-link fa-stack-1x fa-inverse"></i>
+                  </span>
+                  <a href="{{selectedBoutiques?.informations.siteWeb}}">
+                      Site Web&nbsp;: {{selectedBoutiques?.informations.siteWeb}}</a>
+                </li>  
+                
+                
+                <li>
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-1x"></i>
+                    <i class="fas fa-map-marker-alt fa-stack-1x fa-inverse"></i>
+                  </span>
+                  <a href="https://www.google.com/maps?q={{selectedBoutiques?.informations.address}}">
+                      Address&nbsp;:    {{selectedBoutiques?.informations.address}}</a>
+                </li>
+                
+          
+                <li>
+                  <span class="fa-stack fa-lg">
+                      <i class="fas fa-circle fa-stack-1x"></i>
+                      <i class="fas fa-phone fa-stack-1x fa-inverse"></i>
+                  </span>
+                  <a href="tel:{{selectedBoutiques?.informations.phoneNumber}}">
+                      Téléphone &nbsp;:   {{selectedBoutiques?.informations.phoneNumber}}</a>
+              </li>
+              
+              
+              
+              <li>
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-1x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                  <a href="mailto:{{selectedBoutiques?.informations.email}}">
+                      E-mail  &nbsp;{{selectedBoutiques?.informations.email}}</a>
+                </li>
+
+
+
+              
+                            
+          </ul>
+          
+          </div>
+
+
+          <div>
+              <h2>Système de paiement de la boutique en ligne: <span>{{selectedBoutiques?.boutiquetitle}}</span></h2>
+              </div>
+          <div class="col-md-6">
+
+              <ul class="sidebar-list">
+                      
+                        
+                        <li *ngFor="let payment of selectedBoutiques?.paymentSystem">{{ payment }}</li>
+                   
+                
+                                     
+                            
+                   </ul>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+      
+  </div>
+</div>
+

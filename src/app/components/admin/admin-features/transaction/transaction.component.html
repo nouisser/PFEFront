@@ -1,0 +1,44 @@
+
+
+<div>
+  <div scope="col">  <button class="btn btn-primary " (click)="showForm()">addtransaction</button></div>
+<app-addtransaction (aded)="addtransaction($event)" *ngIf="showAdd"></app-addtransaction>
+</div>
+
+
+
+<div class="transactions">
+    <div class="title">Last few transactions</div>
+    <table class="table table-striped table-bordered mx-auto">
+      <thead class="thead-dark">
+        <tr>
+          <th>N° Trans</th>
+          <th>Nom</th>
+          <th>Prénom</th>
+          <th>Date</th>
+          <th>Montant</th>
+  
+          <th>résultats
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of transactionData; index as i">
+          <td>{{ item.idTransaction }}</td>
+          <td>{{ item.surname }}</td>
+          <td>{{ item.givenName }}</td>
+          <td>{{ item.datetransaction }}</td>
+          <td>{{ item.montant }}</td>
+  
+          <td>{{ item.result }}</td>
+          <td><button class="btn btn-danger"(click)="deleteTransactions(item.idTransaction,i)">Delete</button></td>
+          <td><button class="btn btn-info" (click)="updateTransaction(item.idTransaction)" >Edit</button></td>
+
+        </tr>
+        
+      </tbody>
+    </table>
+  
+  </div>
+    
+  

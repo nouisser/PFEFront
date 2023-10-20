@@ -1,0 +1,52 @@
+<p>users works!</p>
+
+<div>
+  <div scope="col">  <button class="btn btn-primary " (click)="showForm()">app-adduser</button></div>
+<app-adduser (aded)="adduser($event)" *ngIf="showAdd"></app-adduser>
+</div>
+
+<div class="users">
+    <table class="table table-striped table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th>ID</th>
+          <th>Username</th>
+          <th>Email</th>
+          <th>State</th>
+          <th>Last Name</th>
+          <th>Phone Number</th>
+          <th>Post Code</th>
+          <th>Address</th>
+          <th>User Type</th>
+          <th>Country</th>
+          <th>City</th>
+          <th>Client Type</th>
+          <th>Company Name</th>
+          <th>Payment Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of userData ; index as i">
+          <td>{{ item.id }}</td>
+          <td>{{ item.username }}</td>
+          <td>{{ item.email }}</td>
+          <td>{{ item.state }}</td>
+          <td>{{ item.lastName }}</td>
+          <td>{{ item.phoneNumber }}</td>
+          <td>{{ item.postCode }}</td>
+          <td>{{ item.address }}</td>
+          <td>{{ item.userType }}</td>
+          <td>{{ item.country }}</td>
+          <td>{{ item.city }}</td>
+          <td>{{ item.clientType }}</td>
+          <td>{{ item.companyName }}</td>
+          <td>{{ item.paymentEmail }}</td>
+        <!--   <td><button class="btn btn-danger" (click)="deleteUsers(item.id, i)">Delete</button></td> -->
+          <td><button class="btn btn-info" (click)="updateuser(item.id)" >Edit</button></td>
+          <button (click)="acceptUser(item.id)">Accepter</button>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

@@ -1,0 +1,458 @@
+<app-pageheader></app-pageheader>
+
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 text-center">
+        <ul class="nav flex-column side-tabs tabs-left">
+         
+          <div class="border border-warning p-2  mx-auto description" style="max-width: 150px; height:170px;">
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab"  (click)="showSolution()">
+                <img class="img-icon-grey mx-auto d-block"src="https://www.gpgcheckout.com/images/description.png">
+                <p  class="text-orange m-0 text-center">Description de la solution</p>
+              </a>
+            </li>
+          </div>
+        </ul>
+        <div class="border border-warning p-2  mx-auto" style="max-width: 150px; height: 170px;">
+              <a class="nav-link" data-toggle="tab"  (click)="showAvantages()">
+                <img class="img-icon-grey mx-auto d-block" src="https://www.gpgcheckout.com/images/service.png">
+                <p  class="text-orange m-0 text-center">Service complet de paiement</p>
+              </a>
+          </div>
+    
+    
+          <div class="border border-warning p-2  mx-auto" style="max-width: 150px; height: 170px;">
+            <a class="nav-link" data-toggle="tab"  (click)="showAutreService()">
+              <img class="img-icon-grey mx-auto d-block" src="https://www.gpgcheckout.com/images/plus.png">
+                <p class="text-orange m-0 text-center">Avantages</p>
+            </a>
+        </div>
+        
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+      <div class="col-md-9">
+        <div class="tab-content">
+          <div class="tab-pane active" id="home">
+            <div *ngIf="showSolutionContent">
+                        <div *ngIf="showSolutionContent"> 
+              <p>GpgCheckout est une solution de paiement électronique destinée à tout marchand désirant intégrer le mode de paiement en ligne.</p>
+           C’est une solution :
+           <div class="row">
+            <div class="col-md-6">
+              <ul>
+               <span class="fa fa-info-circle orange-icon"></span> Simple : Facile à comprendre, à utiliser et à exécuter.<br>
+               <span class="fa fa-info-circle orange-icon"></span> Ergonomique : Solution innovante et de qualité permettant une meilleure adaptation Tache / Poste.<br>
+               <span class="fa fa-info-circle orange-icon"></span> Claire : Solution précise et parfaitement intelligible.<br>
+               <span class="fa fa-info-circle orange-icon"></span> Complète : Solution qui répond totalement à la diversité des besoins.<br>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul>
+               <span class="fa fa-info-circle orange-icon"></span> Innovante : Solution unique, suit les innovations technologiques, fait sens pour la cible, l’entreprise et l’écosystème.<br>
+                <span class="fa fa-info-circle orange-icon"></span> Multidevises : la solution GpgCheckout traite avec plusieurs devises telles que le TND, EUR, USD, etc… .<br>
+               <span class="fa fa-info-circle orange-icon"></span> Multicanal : La solution GpgCheckout offre la centralisation des flux web, TPE, Mobile, …etc.<br>
+              </ul>
+            </div>
+          </div>
+          
+
+            </div>
+          </div>
+          
+        </div>
+
+
+
+
+
+       
+
+
+        
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+      
+
+      <div *ngIf="showAvantagesContent">
+        <title>GpgCheckout - Service de paiement complet</title>
+        <style>
+            .icon-arrow-right {
+                color: orange;
+            }
+        </style>
+    
+        <p>Pour mieux fidéliser ses utilisateurs, GpgCheckout présente un service complet de paiement :</p>
+        <div class="row">
+            <div class="col-md-6">
+                <ul>
+                   <span class="icon-arrow-right">&#10148;</span> Un protocole de souscription et de gestion des risques<br>
+                    <span class="icon-arrow-right">&#10148;</span> Module de réconciliation financière (commissions, réserve, remboursements,…)
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul>
+             <span class="icon-arrow-right">&#10148;</span> Dashboard complet (statistiques et reporting de toutes les données)
+                  <span class="icon-arrow-right">&#10148;</span> Mise en place simplifiée d’un parc TPE
+                </ul>
+            </div>
+        </div>
+
+     
+
+
+
+
+
+
+
+
+        
+       
+    </div>
+    
+   
+   
+
+    <div *ngIf="showAutreServiceContent">
+      <div class="tab-pane" id="autre-service">
+        <h1 style="font-size: 18px;font-weight: bold;color: #ed6a18">Avantages Marchand
+        </h1>
+        <span style="font-weight: bold;">Solution gratuite</span>
+        <style>
+          .fa-arrow-right {
+              color:#E93C05;
+          }
+      </style>
+
+
+
+<div class="row">
+  <div class="col-md-6">
+    <ul>
+      <i class="fa fa-arrow-right text-orange"></i>
+      Guide d’intégration
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <ul>
+      <i class="fa fa-arrow-right text-orange"></i>
+      Modules CMS disponibles
+    </ul>
+  </div>
+</div>
+
+
+<span style="font-weight: bold;">Assistance générale
+</span>
+
+
+
+
+
+<div class="row">
+  <div class="col-md-6">
+    <ul>
+      <i class="fa fa-arrow-right text-orange"></i>
+      Intégration du Kit de paiement
+    </ul>
+
+
+    <ul>
+      <i class="fa fa-arrow-right text-orange"></i>
+      Personnalisation de l’url de paiement
+
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <ul>
+      <i class="fa fa-arrow-right text-orange"></i>
+      Conseil
+    </ul>
+
+    <ul>
+      <i class="fa fa-arrow-right text-orange"></i>
+      Suivi    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+<span style="font-weight: bold;">Environnements stables et sécurisés
+
+</span>
+
+
+
+<div class="row">
+  <div class="col-md-6">
+    <ul>
+      <i class="fa fa-arrow-right text-orange"></i>
+      Environnement de test
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <ul>
+      <i class="fa fa-arrow-right text-orange"></i>
+      Environnement de production
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+<span style="font-weight: bold;">Moyens de paiement
+
+
+</span>
+
+
+<div class="row">
+  <div class="col-md-6">
+    <ul>
+      <i class="fa fa-arrow-right text-orange"></i>
+      CB
+    </ul>
+
+    <ul>
+      <i class="fa fa-arrow-right text-orange"></i>
+      VISA
+    </ul>
+
+    <ul>
+      <i class="fa fa-arrow-right text-orange"></i>
+      Mastercard
+        </ul>
+        <ul>
+          <i class="fa fa-arrow-right text-orange"></i>
+          Carte e-DINAR UNIVERSEL
+            </ul>
+    
+
+
+
+
+
+
+  
+
+  </div>
+  <div class="col-md-6">
+    <ul>
+      <i class="fa fa-arrow-right text-orange"></i>
+      Carte DINARPOST VISA Electron
+    </ul>
+
+    <ul>
+      <i class="fa fa-arrow-right text-orange"></i>
+      Carte e-DINAR SMART
+    </ul>
+
+
+
+    <ul>
+      <i class="fa fa-arrow-right text-orange"></i>
+      Porte-monnaie électronique GP Pay
+    </ul>
+
+
+  </div>
+
+
+
+
+
+
+  <span style="font-weight: bold;">Dashboard complet
+
+
+
+  </span>
+
+
+
+
+
+
+
+  <div class="row">
+    <div class="col-md-6">
+      <ul>
+        <i class="fa fa-arrow-right text-orange"></i>
+        Liste des transactions
+      </ul>
+
+      <ul>
+        <i class="fa fa-arrow-right text-orange"></i>
+        Comptabilité
+      </ul>
+
+      <ul>
+        <i class="fa fa-arrow-right text-orange"></i>
+        Statistiques
+      </ul>
+
+
+
+
+    </div>
+    <div class="col-md-6">
+      <ul>
+        <i class="fa fa-arrow-right text-orange"></i>
+        Graphique
+      </ul>
+
+
+      <ul>
+        <i class="fa fa-arrow-right text-orange"></i>
+        Reporting
+      </ul>
+
+
+    </div>
+  </div>
+
+
+
+  <h1 style="font-size: 18px;font-weight: bold;color: #ed6a18">Avantages Cyberacheteur
+
+  </h1>
+
+<p>
+  La première à être intéressée par le client final, Global Payment Gateway permet aux internautes (porteurs de cartes) de s’inscrire sur la plateforme GpgCheckout et suivre en temps réel leurs transactions payées sur tous les sites partenaires.</p>
+
+<span style="font-weight: bold;">Exclusivement avec GpgCheckout, les porteurs de cartes pourraient
+</span>
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-md-6">
+    <ul>
+      <i class="fa fa-arrow-right text-orange"></i>
+      Bénéficier d’une interface de suivi de leurs achats en temps réel 
+    </ul>
+
+    <ul>
+      <i class="fa fa-arrow-right text-orange"></i>
+      Bénéficier d’un service de suivi et de réclamation    </ul>
+
+    <ul>
+      <i class="fa fa-arrow-right text-orange"></i>
+      Bénéficier de la possibilité de se faire rembourser en cas de non-conformité du produit    </ul>
+
+
+
+
+  </div>
+  <div class="col-md-6">
+    <ul>
+      <i class="fa fa-arrow-right text-orange"></i>
+      Acheter dans un réseau de marchands de confiance professionnel et validé par GPG   </ul>
+
+
+    <ul>
+      <i class="fa fa-arrow-right text-orange"></i>
+      Etre à jour et suivre les nouveaux sites et produits lancés sur le marché
+    </ul>
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       </div>
+    </div>
+    
+
+   
+
+
+
+
+
+      
+
+
+
+
+
+    
+  </div>
+
+
+
+   
+  
+
+  

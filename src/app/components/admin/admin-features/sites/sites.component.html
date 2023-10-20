@@ -1,0 +1,58 @@
+
+
+<div>
+  <div scope="col">  <button class="btn btn-primary " (click)="showForm()">addsite</button></div>
+<app-addsite (aded)="addsite($event)" *ngIf="showAdd"></app-addsite>
+</div>
+
+
+<div class="sites">
+    <div class="title">Sites</div>
+    <table class="table table-striped table-bordered mx-auto">
+      <thead class="thead-dark">
+        <tr>
+          <th>N° Trans</th>
+          <th>Url</th>
+          <th>shopName</th>
+          <th>technicianName</th>
+          <th>description</th>
+          <th>category</th>
+          <th>emailSite</th> 
+          <th>phoneNumberSite</th> 
+          <th>nameTechnician</th> 
+          <th> completeAddress </th> 
+          <th> activitySector </th>
+          <th> revenue </th>
+          <th> completeAddress  </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of siteData; index as i">
+          <td>{{ item.id }}</td>
+          <td>{{ item.url}}</td>
+          <td>{{ item.shopName}}</td>
+          <td>{{ item.technicianName}}</td>
+          <td>{{ item.description}}</td>
+          <td>{{ item.category}}</td>
+          <td>{{ item.emailSite}}</td>
+          <td>{{ item.phoneNumberSite}}</td>
+
+          <td>{{ item.nameTechnician}}</td>
+
+          <td>{{ item.completeAddress}}</td>
+          <td>{{ item.activitySector}}</td>
+          <td>{{ item.revenue}}</td>
+          <td>{{ item.completeAddress}}</td>
+
+          <td><button class="btn btn-danger"(click)="deleteSites(item.id,i)">Delete</button></td>
+
+          <td><button class="btn btn-info" (click)="updateSite(item.id)" >Edit</button></td>
+
+
+        </tr>
+        
+      </tbody>
+    </table>
+  
+  </div>
+    

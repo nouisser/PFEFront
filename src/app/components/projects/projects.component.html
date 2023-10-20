@@ -1,0 +1,94 @@
+
+
+<h3 _ngcontent-lji-c34>
+  PLUS DE 100 SITES NOUS ONT FAIT CONFIANCE </h3>
+<!--
+
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="row">
+        <div *ngFor="let boutique of boutiques" class="col-md-3">
+          <img [src]="boutique.image"  class="d-block w-100" alt="image1" (click)="displayBoutiqueContent(boutique)">
+        
+        </div>
+        
+
+        
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="assets/img/team-1.jpg" class="d-block w-100" alt="image5">
+        </div>
+        <div class="col-md-3">
+          <img src="assets/img/team-2.jpg" class="d-block w-100" alt="image6">
+        </div>
+        <div class="col-md-3">
+          <img src="assets/img/team-3.jpg" class="d-block w-100" alt="image7">
+        </div>
+        <div class="col-md-3">
+          <img src="assets/img/team-2.jpg" class="d-block w-100" alt="image8">
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="assets/img/testimonial-1.jpg" class="d-block w-100" alt="image9">
+        </div>
+        <div class="col-md-3">
+          <img src="assets/img/testimonial-2.jpg" class="d-block w-100" alt="image10">
+        </div>
+        <div class="col-md-3">
+          <img src="assets/img/testimonial-3.jpg" class="d-block w-100" alt="image11">
+        </div>
+        <div class="col-md-3">
+          <img src="assets/img/testimonial-4.jpg" class="d-block w-100" alt="image12">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  
+  <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
+<ul>
+  <li *ngFor="let boutique of boutiques">
+    <img [src]="boutique.image" (click)="displayBoutiqueContent(boutique)">
+    {{boutique.title}}
+   
+  </li>
+</ul>
+-->
+
+
+
+
+
+
+<owl-carousel-o [options]="customOptions">
+  <ng-container *ngFor="let boutique of boutiques">
+    <ng-template carouselSlide>
+      <img [src]="boutique.boutiqueImg" alt="" (click)="displayBoutiqueContent(boutique)" 
+      style="max-width: 200px; max-height: 200px; border-radius: 60%;">
+    </ng-template>
+  </ng-container>
+</owl-carousel-o>

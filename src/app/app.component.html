@@ -1,0 +1,21 @@
+
+<ng-container *ngIf="!isAdmin">
+  <!-- Navbar Start -->
+  <app-navbar></app-navbar>
+
+  <!-- Navbar End -->
+
+  <router-outlet></router-outlet>
+
+  <!-- Footer Start -->
+  <app-footer></app-footer>
+
+  <!-- Footer End -->
+  <!-- Copyright Start -->
+  <app-copyright></app-copyright>
+
+  <!-- Copyright End -->
+</ng-container>
+<ng-container *ngIf="isAdmin">
+  <router-outlet></router-outlet>
+</ng-container>

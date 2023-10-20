@@ -1,0 +1,895 @@
+
+<app-pageheader></app-pageheader>
+
+ <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <ul class="nav flex-column side-tabs tabs-left">
+        <div class="border border-warning p-2 mx-auto" style="max-width: 150px; height: 170px;">
+          <a class="nav-link" data-toggle="tab" (click)="showSolutionecommerce()">
+            <img class="img-icon-grey mx-auto d-block" src="https://www.gpgcheckout.com/images/service.png">
+            <p class="text-orange m-0 text-center">Solution e-commerce</p>
+          </a>
+        </div>
+        <div class="border border-warning p-2 description mx-auto" style="max-width: 150px; height:170px;">
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab"  (click)="showServicecompletdepaiement()">
+              <img class="img-icon-grey mx-auto d-block" src="https://www.gpgcheckout.com/images/description.png">
+              <p class="text-orange m-0 text-center">Sécurité et garantit</p>
+            </a>
+          </li>
+        </div>
+        <div class="border border-warning p-2 mx-auto" style="max-width: 150px; height: 170px;">
+          <a class="nav-link" data-toggle="tab"   (click)="showkitpaiement()">
+            <img class="img-icon-grey mx-auto d-block" src="https://www.gpgcheckout.com/images/plus.png">
+            <p class="text-orange m-0 text-center">Kit de paiement</p>
+          </a>
+        </div>
+        <div class="border border-warning p-2 mx-auto" style="max-width: 150px; height: 170px;">
+          <a class="nav-link" data-toggle="tab"  (click)="showcyberacheteur()">
+            <img class="img-icon-grey mx-auto d-block" src="https://www.gpgcheckout.com/images/service.png">
+            <p class="text-orange m-0 text-center">Cyberacheteur</p>
+          </a>
+        </div>
+      </ul>
+    </div>
+
+
+
+
+    <div class="col-md-9">
+      <div class="tab-content">
+        <div class="tab-pane active" id="home">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div *ngIf="showSolutionecommerceContent">
+
+
+
+<p>GpgCheckout est une solution de paiement électronique destinée à tout marchand désirant intégrer le mode de paiement en ligne.
+  <br>C’est une solution :</p>
+
+  <i class="icon-info-sign" style="color:orange"></i>
+
+  <div class="row">
+  <div class="col-md-6">
+    <ul>
+     <span class="fa fa-info-circle orange-icon"></span> Simple : Facile à comprendre, à utiliser et à exécuter.<br>
+     <span class="fa fa-info-circle orange-icon"></span> Ergonomique : Solution innovante et de qualité permettant une meilleure adaptation Tache / Poste.<br>
+     <span class="fa fa-info-circle orange-icon"></span> Claire : Solution précise et parfaitement intelligible.<br>
+     <span class="fa fa-info-circle orange-icon"></span> Complète : Solution qui répond totalement à la diversité des besoins.<br>
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <ul>
+     <span class="fa fa-info-circle orange-icon"></span> Innovante : Solution unique, suit les innovations technologiques, fait sens pour la cible, l’entreprise et l’écosystème.<br>
+      <span class="fa fa-info-circle orange-icon"></span> Multidevises : la solution GpgCheckout traite avec plusieurs devises telles que le TND, EUR, USD, etc… .<br>
+     <span class="fa fa-info-circle orange-icon"></span> Multicanal : La solution GpgCheckout offre la centralisation des flux web, TPE, Mobile, …etc.<br>
+    </ul>
+  </div>
+
+</div>
+
+<style>
+  .icon-arrow-right {
+      color: orange;
+  }
+</style>
+
+<p>Pour mieux fidéliser ses utilisateurs, GpgCheckout présente un service complet de paiement :</p>
+
+<div class="row">
+  <div class="col-md-6">
+      <ul>
+         <span class="icon-arrow-right">&#10148;</span> Un protocole de souscription et de gestion des risques<br>
+          <span class="icon-arrow-right">&#10148;</span> Module de réconciliation financière (commissions, réserve, remboursements,…)
+      </ul>
+  </div>
+  <div class="col-md-6">
+      <ul>
+   <span class="icon-arrow-right">&#10148;</span> Dashboard complet (statistiques et reporting de toutes les données)
+        <span class="icon-arrow-right">&#10148;</span> Mise en place simplifiée d’un parc TPE
+      </ul>
+  </div>
+</div>
+
+
+
+<p style="font-size: 18px; font-weight: bold; color: #E93C05; display: inline-block; margin-right: 10px;">Avantages Marchand</p><br>
+<h1 style="font-size: 18px;font-weight: bold; display: inline-block; padding-left: 10px;">Solution gratuite</h1>
+<div class="row">
+  <div class="col-md-6">
+      <ul>
+         <span class="icon-arrow-right">&#10148;</span>Guide d’intégration
+         <br>
+      </ul>
+  </div>
+  <div class="col-md-6">
+      <ul>
+        <span class="icon-arrow-right">&#10148;</span>Modules CMS disponibles
+
+      </ul>
+  </div>
+</div>
+
+
+
+
+
+<h1 style="font-size: 18px;font-weight: bold; display: inline-block; padding-left: 10px;">Assistance générale
+</h1>
+<div class="row">
+  <div class="col-md-6">
+      <ul>
+         <span class="icon-arrow-right">&#10148;</span>Intégration du Kit de paiement<br>
+         <span class="icon-arrow-right">&#10148;</span>Personnalisation de l’url de paiement
+         <br>
+      </ul>
+  </div>
+  <div class="col-md-6">
+      <ul>
+        <span class="icon-arrow-right">&#10148;</span>Conseil<br>
+        <span class="icon-arrow-right">&#10148;</span>Suivi
+      </ul>
+  </div>
+</div>
+
+
+
+
+
+
+<h1 style="font-size: 18px;font-weight: bold; display: inline-block; padding-left: 10px;">Environnements stables et sécurisés
+</h1>
+<div class="row">
+  <div class="col-md-6">
+      <ul>
+         <span class="icon-arrow-right">&#10148;</span>Environnement de test
+      </ul>
+  </div>
+  <div class="col-md-6">
+      <ul>
+        <span class="icon-arrow-right">&#10148;</span>Environnement de production
+      </ul>
+  </div>
+</div>
+
+
+
+
+
+<h1 style="font-size: 18px;font-weight: bold; display: inline-block; padding-left: 10px;">Moyens de paiement
+</h1>
+<div class="row">
+  <div class="col-md-6">
+      <ul>
+         <span class="icon-arrow-right">&#10148;</span>CB<br>
+         <span class="icon-arrow-right">&#10148;</span>VISA<br>
+         <span class="icon-arrow-right">&#10148;</span>Mastercard<br>
+         <span class="icon-arrow-right">&#10148;</span>Carte e-DINAR UNIVERSEL<br>
+      </ul>
+  </div>
+  <div class="col-md-6">
+      <ul>
+        <span class="icon-arrow-right">&#10148;</span>Carte DINARPOST VISA Electron<br>
+        <span class="icon-arrow-right">&#10148;</span>Carte e-DINAR SMART<br>
+        <span class="icon-arrow-right">&#10148;</span>Porte-monnaie électronique GP Pay<br>
+      </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+<h1 style="font-size: 18px;font-weight: bold; display: inline-block; padding-left: 10px;">Dashboard complet
+</h1>
+<div class="row">
+  <div class="col-md-6">
+      <ul>
+         <span class="icon-arrow-right">&#10148;</span>Liste des transactions
+         <br>
+         <span class="icon-arrow-right">&#10148;</span>Comptabilité
+
+
+
+
+      </ul>
+  </div>
+  <div class="col-md-6">
+      <ul>
+        <span class="icon-arrow-right">&#10148;</span>Statistiques et graphique
+        <br>
+        <span class="icon-arrow-right">&#10148;</span>Reporting
+      </ul>
+  </div>
+</div>
+
+
+
+
+
+
+<p style="font-size: 18px; font-weight: bold; color: #E93C05; display: inline-block; margin-right: 10px;">Avantages Cyberacheteur
+</p><br>
+
+<p> La première à être intéressée par le client final, Global Payment Gateway permet aux internautes (porteurs de cartes) de s’inscrire sur la plateforme GpgCheckout et suivre en temps réel leurs transactions payées sur tous les sites partenaires</p>
+<span style="font-weight: bold;" >Exclusivement avec GpgCheckout, les porteurs de cartes pourraient
+</span>
+
+
+<div class="row">
+  <div class="col-md-6">
+      <ul>
+         <span class="icon-arrow-right">&#10148;</span>Bénéficier d’une interface de suivi de leurs achats en temps réel
+
+         <br>
+         <span class="icon-arrow-right">&#10148;</span>Bénéficier d’un service de suivi et de réclamation<br>
+
+         <span class="icon-arrow-right">&#10148;</span>Bénéficier de la possibilité de se faire rembourser en cas de non-conformité du produit<br>
+
+
+
+      </ul>
+  </div>
+
+
+
+
+
+
+<div class="col-md-6">
+  <ul>
+    <span class="icon-arrow-right">&#10148;</span>Acheter dans un réseau de marchands de confiance professionnel et validé par GPG
+
+    <br>
+    <span class="icon-arrow-right">&#10148;</span>Etre à jour et suivre les nouveaux sites et produits lancés sur le marché
+  </ul>
+</div>
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="tab-pane" *ngIf="showServicecompletdepaiementContent">
+
+
+
+
+<p style="font-size: 18px; font-weight: bold; color: #E93C05; display: inline-block; margin-right: 10px;">Agrément PCI DSS
+</p><br>
+
+
+<p>Certifié PCI DSS niveau2, Global Payment Gateway garantit un environnement de paiement conforme aux réglementations VISA et MasterCard.
+  Le manuel de standard PCI DSS définit pour benificier2 exigences minimales pour :</p>
+
+
+
+
+
+
+
+  <div class="row">
+    <div class="col-md-6">
+      <ul>
+       <span class="fa fa-caret-right"  style="color: orange;"></span> Simple : Facile à comprendre, à utiliser et à exécuter.<br>
+       <span class="fa fa-caret-right"  style="color: orange;"></span> Uniformiser les mesures de sécurité à l’échelle mondiale<br>
+
+
+  </ul>
+
+      </div>
+
+      <div class="col-md-6">
+      <ul>
+       <span class="fa fa-caret-right"  style="color: orange;"></span>Etanchéité des environnements de développement : de test et de production...<br>
+
+
+  </ul>
+
+      </div>
+
+
+
+
+    </div>
+
+    <p style="font-size: 18px; font-weight: bold; color: #E93C05; display: inline-block; margin-right: 10px;">Outils de gestion contre la fraude
+
+
+
+
+      <p>Avec le module anti-fraude de gestion des risques, Global Payment Gateway offre la meilleure sécurité possible pour sa solution GpgCheckout : Un vrai service de dépistage évolutif qui propose une gamme d’outils intégrés de réduction de la fraude afin de maximiser la sécurité des transactions.
+        En réduisant votre exposition à la fraude, Global Payment Gateway vous aidera à augmenter votre chiffre d'affaires et de réduire les coûts associés aux transactions frauduleuses. Notre service intégré ne se limite pas à la carte de crédit (carte non-Présent) transactions ainsi que le moyen de paiement via le porte money éléctronique pour plus de sécurité , mais vous offre également une protection pour les transactions de débit direct (TPE).</p>
+
+  </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="tab-pane" *ngIf="showkitpaiementContent">
+
+
+
+
+
+
+
+
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item" style="text-align: center;">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Pour bénéficier de notre solution
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+
+
+                <img src="https://www.gpgcheckout.com/images/kit-1.png">
+                <p class="title-kit"> Créez un compte professionnel</p>
+                <br>
+
+                <p class="title-kit">Cette étape vous permet de créer un compte dans l'environnement d'homologation, nécessaire pour l'intégration de GpgCheckout.</p>
+
+                <img src="https://www.gpgcheckout.com/images/kit-2.png">
+                <p class="title-kit">Configurez votre compte professionnel</p>
+
+<p>Remplissez le formulaire de création de compte et précisez l'url de la boutique en ligne, son adresse et la dénomination sociale puis cliquez sur 'Valider'. Après validation admin, votre vous recevrez vos identifiants de connexion par e-mail.
+
+</p><br>
+<img src="https://www.gpgcheckout.com/images/kit-3.png">
+<p class="title-kit">Intégrer votre Kit GpgCheckout</p>
+<br>
+
+<p>Renseignez vos identifiants pour vous connecter. Une fois identifié, il ne vous reste plus qu'à suivre étape par étape les indications du guide d'intégration. Cela vous permettra d'intégrer GpgCheckout.
+
+</p>
+
+
+
+
+
+
+
+
+
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Modules e-Shop
+
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">GpgCheckout est disponible sur les modules e-commerce suivants :
+<div class="row" style="text-align: center;">
+<div class="col-md-3">
+
+  <img src="https://www.gpgcheckout.com/images/module/magento.png">
+</div>
+
+<div class="col-md-3">
+  <img src="https://www.gpgcheckout.com/images/module/prestashop.png">
+</div>
+
+
+<div class="col-md-3">
+  <img src="https://www.gpgcheckout.com/images/module/joomla.png">
+</div>
+
+
+<div class="col-md-3">
+  <img src="https://www.gpgcheckout.com/images/module/wordpress.png">
+</div>
+
+</div>
+
+
+<div class="row" style="text-align: center;">
+
+
+  <div class="col-md-3">
+  <img src="https://www.gpgcheckout.com/images/module/Zen-Cart.png">
+</div>
+
+
+
+<div class="col-md-3">
+  <img src="https://www.gpgcheckout.com/images/module/virtuemart.png">
+</div>
+
+
+
+
+<div class="col-md-3">
+  <img src="https://www.gpgcheckout.com/images/module/opencart.png">
+</div>
+
+
+<div class="col-md-3">
+  <img src="https://www.gpgcheckout.com/images/module/woocommerce.png">
+</div>
+<div class="row" style="text-align: left ;">
+
+<span class="titleiconedetails" style="text-align: left ;color: #E93C05;">Kits d'intégration</span>
+
+<p style="float: left;"> Notre kit d'intégration est sous forme d’un submit de formulaire facilitant  le développement informatique que vous allez devoir réaliser pour intégrer la solution de paiement GpgCheckout sur votre site.</p>
+</div>
+
+
+
+<div class="row" style="text-align: center;">
+
+ <div class="col-md-12">
+  <img src="/src/assets/img/php.png" width="200">
+ </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Processus de paiement
+
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Le système de paiment en ligne de global paiement gateway se base sur un serveur de paiement securisée et certifiée PCI/DSS par visa et master card qui permet d’offrir les autorisations sur les cartes de paiement locales ou etrangere dans un environement securisé
+                Ci-dessous le processus de paiement sur GPGcheckout :<br>
+                <img src="https://www.gpgcheckout.com/images/module/prcessus.png" style="text-align: center;">
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <ul class="theme-list pull-left">
+                      <li>1. Le cyberacheteur choisit son panier sur le site marchand partenaire de GPG et passe au paiement</li>
+                      <li>3. GpgCheckout renvoie le porteur vers la page du processeur, spécifique au mode de paiement choisi préalablement, pour saisir ses données bancaires et valider le paiement</li>
+                      <li>4'. GpgCheckout envoie au marchand :
+                        <br>- Une notification serveur-serveur lui indiquant l’état de la transaction afin de mettre à jour l’état de la transaction au niveau de son back office.
+                        <br> - Un e-mail de confirmation de paiement</li>
+
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <ul class="theme-list pull-left">
+                      <li>2. Le site marchand envoie l’acheteur à la page paiement de GPG pour choisir le mode de paiement (CB, PT, GP Pay) avec le récapitulatif panier et ses coordonnées</li>
+                      <li>4. Après soumission du formulaire, l’acheteur est redirigé vers la page GpgCheckout où il peut cliquer sur le bouton 'Retour au site marchand' pour continuer son shopping en ligne</li>
+                      <li>4''. GpgCheckout envoie un e-mail de confirmation de paiement pour l’acheteur</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                FAQ
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <h5>MON COMPTE GPGCHECKOUT</h5>
+<SPAN class="titleiconedetails" style="color: #ed6a18">
+
+  1.Comment souscrire à GpgCheckout ?
+
+</SPAN>
+
+<p style="float: left;">
+  Pour bénéficier de notre solution, enregistrez-vous gratuitement via l'espace professionnel sur le site www.gpgcheckout.com et laissez-vous guider dans les différentes étapes. Choisissez le kit convenable à votre site et télécharger-le en attendant de recevoir les accès de connexion Prod et Pré-prod de la part de notre responsable intégration.
+</p>
+
+<br>
+<SPAN class="titleiconedetails" style="color: #ed6a18">
+  2. Combien de temps cela prend-il pour que mon compte soit validé ?
+</SPAN>
+<p style="float: left;">
+
+L'enregistrement de votre compte marchand se fait en quelques secondes via notre site internet. Une fois que nous aurons reçu le formulaire de souscription et l'avenant technique au contrat que vous aurez reçus par email, votre compte est activé dans un délai de 48 heures
+</p>
+
+<br>
+<SPAN class="titleiconedetails" style="color: #ed6a18">
+  3. Comment réinitialiser un mot de passe perdu ou un compte bloqué ?
+</SPAN>
+<p style="float: left;">
+  Utiliser le lien mot de passe oublié? A partir de notre plateforme dans le menu ‘Espace professionnel’ / Connexion / mot de passe oublié.: Pour être valide sachez que le mot de passe doit contenir :
+  <br>- Un mélange de lettres minuscules et majuscules, de chiffres et de caractères spéciaux
+  <br>- Au moins 8 caractères
+  <br>- Des mots non faciles à deviner
+</p>
+<div class="title-tab">
+  <h5>GESTION DES KITS ET INTEGRATION</h5>
+</div>
+<SPAN class="titleiconedetails" style="color: #ed6a18">
+  1. Avec quels kits GpgCheckout peut-il être interfacé ?
+</SPAN>
+<p style="float: left;">
+  Des kits de développements vous permettent d'interfacer votre site avec GpgCheckout. Ils sont disponibles en PHP. Des plus, nous proposons des kits s'interfaçant avec des modules e-shop les plus courantes :
+  <br>- PrestaShop
+  <br>- OS Commerce
+  <br>- Joomla: VirtueMart
+  <br>- Joomla: en-masse
+  <br>- Magento
+  <br>- ZenCart
+  <br>- Drupal
+  <br>- Opencart
+  <br>- Wordpress : Woo Commerce
+  <br>- … Retrouvez l'ensemble des modules e-shop dans notre onglet Intégrez /Modules e-shop & Kits d'intégration</p>
+  <br>
+  <SPAN class="titleiconedetails" style="color: #ed6a18">
+    2. Comment installer le module e-shop dans mon application e-commerce ?
+  </SPAN>
+
+  <p>
+ Chaque module e-shop est accompagné d'un manuel d'intégration pour vous permettre d'installer rapidement et facilement le module.</p>
+
+
+   <SPAN class="titleiconedetails" style="color: #ed6a18">
+      3. La mise en place du paiement sécurisé en ligne de GpgCheckout est-elle complexe ?
+    </SPAN>
+  <p>
+    En moins d'une demi-journée, vous avez la possibilité d'intégrer le module GpgCheckout en mode test au sein de votre site web. Une assistance technique est à votre disposition via mail, téléphone ou Skype répondant à toutes vos questions.
+  </p>
+
+  <div class="title-tab">
+    <h5>MES PAIEMENTS
+    </h5>
+  </div>
+
+
+  <p>
+    GpgCheckout permet aux e-commerçants d'accepter les moyens de paiement suivants :
+    <br>- CB
+    <br>- VISA
+    <br>- Master Card
+    <br>- La Poste Tunisienne : e-dinars universelle, e-dinars Smart,
+    <br>- GP Pay</p>
+
+    <SPAN class="titleiconedetails" style="color: #ed6a18">
+
+      2. Quels sont les outils de suivi des paiements sécurisés mis à disposition ?
+
+    </SPAN>
+
+<p>GpgCheckout met à votre disposition une interface de back-office rafraîchie en temps réel : le centre d'administration marchand. Cette interface de consultation et de gestion de vos transactions est accessible à tout moment via Internet (login / mot de passe). Cette console vous permet de gérer vos paiements, de consulter vos historique de paiement (Web, TPE, GP Pay), annulation, remboursement, réclamations…etc</p>
+
+
+
+<SPAN class="titleiconedetails" style="color: #ed6a18">
+
+  3. Peut-on avoir un contrat GpgCheckout rattaché à plusieurs comptes bancaires dans des banques différentes?
+
+</SPAN>
+
+<p>Oui, les offres GpgCheckout sont multi-boutiques et multi-contrats. Vous avez ainsi la possibilité d'utiliser plusieurs comptes bancaires dans les banques de votre choix.
+</p>
+<div class="title-tab">
+  <h5>LUTTE CONTRE LA FRAUDE
+
+  </h5>
+</div>
+
+
+<SPAN class="titleiconedetails" style="color: #ed6a18">
+
+  1. GpgCheckout permet-il de lutter contre la fraude ?
+
+</SPAN>
+
+<p>Un module de Lutte contre la fraude est intégré à notre solution GpgCheckout. Nous pouvons prévenir les tentatives d'achats frauduleuses. Ce module permet de définir des règles de prévention, de bloquer les achats depuis certains pays grâce à notre système de localisation via l'adresse IP de l'internaute, de mettre des cartes en liste "rouge" etc...</p>
+
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+              </div>
+
+
+
+
+
+
+
+
+
+<div class="tab-pane" *ngIf="showcyberacheteurContent">
+
+<p>
+
+  Global Payment Gateway permet aux consommateurs d'avoir un espace spécifique pour pouvoir suivre toute transaction payée sur nos sites partenaires.
+
+Il suffit de s'inscrire en tant que particulier sur la plateforme de GpgCheckout pour visualiser tout paiement effectué en ligne sur le réseau marchand de GPG. Afin d'avoir un historique complet de paiement WEB et TPE et bénéficier des avantages suivants :
+</p>
+
+
+<div class="row">
+<style>
+  .fa-arrow-right {
+    color: #ed6a18;
+}
+</style>
+
+  <div class="col-md-6">
+    <ul>
+      <i class="fa fa-arrow-right text-orange"></i>
+      Bénéficier d’une interface de suivi de leurs achats en temps réel
+    </ul>
+
+
+    <ul>
+      <i class="fa fa-arrow-right text-orange"></i>
+      Historique des réclamations
+    </ul>
+
+
+
+
+  </div>
+  <div class="col-md-6">
+    <ul>
+
+      <i class="fa fa-arrow-right text-orange"></i>Dépôt réclamation
+    </ul>
+      <ul>
+
+
+      <i class="fa fa-arrow-right text-orange"></i>Demande de remboursement
+
+        </ul>
+
+  </div>
+</div>
+<p>En s’inscrivant en tant que particulier sur GpgCheckout, on pourra bénéficier des utilités d’un porte-monnaie électronique. Autrement dit, le compte virtuel GpgCheckout peut être utilisé comme un moyen de paiement de vos achats.
+A travers ce porte-monnaie électronique surnommé GP Pay, on peut :
+</p>
+
+
+
+<div class="row">
+  <style>
+    .fa-arrow-right {
+      color: #ed6a18;
+  }
+  </style>
+
+    <div class="col-md-6">
+      <ul>
+        <i class="fa fa-arrow-right text-orange"></i>
+        Alimenter votre compte via une carte bancaire,      </ul>
+
+      <ul>
+        <i class="fa fa-arrow-right text-orange"></i>
+        Transférer du solde vers et depuis votre compte GP PAY(régler une dette avec un ami, payer pour l'achat en ligne / ventes ...)
+      </ul>
+
+      <ul>
+        <i class="fa fa-arrow-right text-orange"></i>
+        Demander une carte et adossée à votre compte      </ul>
+
+
+
+
+    </div>
+    <div class="col-md-6">
+      <ul>
+
+        <i class="fa fa-arrow-right text-orange"></i>Transférer de l'argent vers et depuis un compte bancaire.
+      </ul>
+        <ul>
+
+
+
+
+        <i class="fa fa-arrow-right text-orange"></i>Recevoir de l'argent d’un tiers.
+        <br>
+
+          </ul>
+          <ul>
+
+            <br><i class="fa fa-arrow-right text-orange"></i>Créer un réseau de compte privée répondant à vos besoin
+          </ul>
+    </div>
+  </div>
+
+
+  <SPAN class="titleiconedetails" style="color: #ed6a18">
+
+    Pourquoi utiliser GP Pay ?
+
+  </SPAN>
+  <div class="row">
+    <div class="col-md-6">
+      1. GP Pay est un système de paiement sécurisé : avec GP Pay, on n’aura plus besoin d'exposer les informations de carte de crédit / débit à chaque fois qu’on achète en ligne. Saisir une seule fois les coordonnées bancaires pour alimenter le compte GP Pay peut servir à payer plusieurs achats en ligne par le biais d’un simple Login et mot de passe.
+<br>
+3. Le transfert instantané compte à compte: Avec GP Pay, on a la possibilité d’envoyer et recevoir de l’argent à un autre compte GP Pay en temps réel.
+
+    </div>
+    <div class="col-md-6">
+
+      2. GP Pay est pratique: il suffit de saisir son login et mot de passe afin de payer sa transaction.
+<br>
+
+4. A travers GP Pay, on a la possibilité de créer de sous comptes, les alimenter et avoir un contrôle direct sur les entrées/sorties du compte, une solution très efficace pour pouvoir contrôler ses membres de familles ou ses employés.
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+  </div>
+
+
+

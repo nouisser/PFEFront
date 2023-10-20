@@ -1,0 +1,75 @@
+<p>adduser works!</p>
+<div class="users">
+  <div class="col-md-6 offset-md-3">
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label>username</label>
+        <input type="text" class="form-control" id="shopName" [(ngModel)]="user.username" name="shopName">
+      </div>
+      <div class="form-group">
+        <label>email</label>
+        <input type="text" class="form-control" id="url" [(ngModel)]="user.email" name="url">
+      </div>
+      
+      <div class="form-group">
+        <label>state</label>
+        <input type="text" class="form-control" id="description" [(ngModel)]="user.state" name="description">
+      </div>
+      <div class="form-group">
+        <label>lastName</label>
+        <input type="text" class="form-control" id="category" [(ngModel)]="user.lastName" name="category">
+      </div>
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="text" class="form-control" id="phoneNumberSite" [(ngModel)]="user.phoneNumber" name="phoneNumberSite">
+      </div>
+      <div class="form-group">
+        <label>postCode</label>
+        <input type="text" class="form-control" id="nameTechnician" [(ngModel)]="user.postCode" name="nameTechnician">
+      </div>
+      <div class="form-group">
+        <label>address</label>
+        <input type="text" class="form-control" id="revenue" [(ngModel)]="user.address" name="revenue">
+      </div>
+      <div class="form-group">
+        <label>userType</label>
+        <input type="text" class="form-control" id="activitySector" [(ngModel)]="user.userType" name="activitySector">
+      </div>
+      <div class="form-group">
+        <label>country</label>
+        <input type="email" class="form-control" id="emailSite" [(ngModel)]="user.country" name="emailSite">
+      </div> 
+      <div class="form-group">
+        <label>city</label>
+        <input type="email" class="form-control" id="completeAddress" [(ngModel)]="user.city" name="completeAddress">
+      </div>
+      <div class="form-group">
+        <label>clientType</label>
+        <input type="email" class="form-control" id="completeAddress" [(ngModel)]="user.clientType" name="completeAddress">
+      </div>
+
+      <div class="form-group">
+        <label>companyName</label>
+        <input type="email" class="form-control" id="completeAddress" [(ngModel)]="user.companyName" name="completeAddress">
+      </div>
+      <div class="form-group">
+        <label>password</label>
+        <input type="email" class="form-control" id="completeAddress" [(ngModel)]="user.password" name="completeAddress">
+      </div>
+        
+      <div class="form-group">
+        <label>Roles</label>
+        <select class="form-control form-control-lg" [(ngModel)]="selectedRoles" name="roles" multiple>
+          <option *ngFor="let role of roles" [value]="role.id">{{ role.name }}</option>
+        </select>
+      </div>
+      
+      
+      <div class="form-group">
+        <label>paymentEmail</label>
+        <input type="email" class="form-control" id="completeAddress" [(ngModel)]="user.paymentEmail" name="completeAddress">
+      </div>
+      <button class="btn btn-success" type="submit">Submit</button>
+    </form>
+  </div>
+</div>

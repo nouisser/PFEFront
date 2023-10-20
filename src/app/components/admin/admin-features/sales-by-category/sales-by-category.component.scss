@@ -1,0 +1,36 @@
+.chart {
+  position: relative;
+}
+
+.flash-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flash {
+  width: 60px;
+  height: 50px;
+  border-radius: 50px 50px 0 0;
+  text-align: center;
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 50px;
+}
+
+.accepter {
+  background-color: yellow;
+  color: black;
+}
+
+.refuser {
+  background-color: orange;
+  color: white;
+}
+
+.en-attente {
+  background-color: blue;
+  color: white;
+}

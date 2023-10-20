@@ -1,0 +1,18 @@
+.project-item img {
+  width: 100%;
+  height: auto;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+h3 {
+  background-color: #f7f3f2;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-direction: reverse;
+  text-align: center;
+}
+

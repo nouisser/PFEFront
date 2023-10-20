@@ -1,0 +1,254 @@
+<app-pageheader></app-pageheader>
+
+<!-- Section: Design Block -->
+<section class="text-center">
+    <!-- Background image -->
+    <div class="p-5 bg-image" style="
+          background-image: url('https://mdbootstrap.com/img/new/textures/full/171.jpg');
+          height: 300px;
+          "></div>
+    <!-- Background image -->
+  
+    <div class="card mx-4 mx-md-5 shadow-5-strong" style="
+          margin-top: -100px;
+          background: hsla(0, 0%, 100%, 0.8);
+          backdrop-filter: blur(30px);
+          ">
+      <div class="card-body py-5 px-md-5">
+  
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="fw-bold mb-5">Informations marchand
+            </h2>
+            <form id="registrationForm" (ngSubmit)="onSubmit()" #registerForm="ngForm" enctype="multipart/form-data">
+              <!-- 2 column grid layout with text inputs for the first and last names -->
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <label class="form-label" for="form3Example1">Nom*</label>
+                    <input type="text" name="lastName" [(ngModel)]="user.lastName" class="form-control" />
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="form-outline">
+                <label class="form-label" for="form3Example2">Type client</label>
+                <input type="text" name="clientType" [(ngModel)]="user.clientType" class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="form-outline">
+                  <label class="form-label" for="form3Example1">Prénom</label>
+                  <input type="text" name="username" [(ngModel)]="user.username" required class="form-control" />
+              </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="form-outline">
+              <label class="form-label" for="form3Example1">Nom entreprise</label>
+              <input type="text" name="companyName" [(ngModel)]="user.companyName" class="form-control" />
+
+          </div>
+      </div>
+
+
+ <!-- Email input -->
+ <div class="col-md-6 mb-4">
+        <label class="form-label" for="form3Example2">Email </label>
+
+        <input type="email" name="email" [(ngModel)]="user.email" required class="form-control" />
+  </div>
+
+  <div class="col-md-6 mb-4">
+    <label class="form-label" for="form3Example2">E-mail de paiement </label>
+    <input type="email" name="paymentEmail" [(ngModel)]="user.paymentEmail" class="form-control" />
+</div>
+
+<div class="col-md-6 mb-4">
+    <label class="form-label" for="form3Example2">Téléphone</label>
+
+    <input type="tel" name="phoneNumber" [(ngModel)]="user.phoneNumber" class="form-control" />
+</div>
+
+<div class="col-md-6 mb-4">
+    <label class="form-label" for="codepostal">Code Postal</label>
+    <input type="text" name="postCode" [(ngModel)]="user.postCode" class="form-control">
+  </div>
+  <div class="col-md-6 mb-4">
+    <label class="form-label" for="pays">Pays</label>
+    <input type="text" name="country" [(ngModel)]="user.country" class="form-control">
+  </div>
+  <div class="col-md-6 mb-4">
+    <label class="form-label" for="adresse">Adresse</label>
+    <input type="text" name="address" [(ngModel)]="user.address" class="form-control">
+  </div>
+  <div class="col-md-6 mb-4">
+    <label class="form-label" for="ville">Ville</label>
+    <input type="city" name="city" [(ngModel)]="user.city" class="form-control">
+  </div>
+  <div class="col-md-6 mb-4">
+    <label class="form-label" for="password">password</label>
+
+  <input type="password" name="password" [(ngModel)]="user.password" required>
+  </div>
+
+  <div class="col-md-6 mb-4">Type
+  <select name="role" [(ngModel)]="user.role">
+    <option [value]="'mar'">MARCHAND</option>
+    <option [value]="'user'">CLIENT</option>
+  </select>
+</div>
+
+
+  <h2 class="fw-bold mb-5">Informations site
+</h2>
+
+
+
+<div class="row">
+    <div class="col-md-6 mb-4">
+      <div class="form-outline">
+        <label class="form-label" for="form3Example1">Nom boutique</label>
+        <input type="text" name="shopName" [(ngModel)]="user.shopName" class="form-control" />
+
+    </div>
+    </div>
+
+
+
+
+    <div class="col-md-6 mb-4">
+        <div class="form-outline">
+          <label class="form-label" for="form3Example1">E-mail
+          </label>
+          <input type="email" name="emailSite" [(ngModel)]="user.emailSite" class="form-control" />
+  
+      </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="form-outline">
+          <label class="form-label" for="form3Example1">Url*
+          </label>
+          <input type="url" name="url" [(ngModel)]="user.url" class="form-control" />
+  
+      </div>
+      </div>
+
+    
+
+      <div class="col-md-6 mb-4">
+        <div class="form-outline">
+          <label class="form-label" for="form3Example1">Téléphone
+          </label>
+          <input type="tel" name="phoneNumberSite" [(ngModel)]="user.phoneNumberSite" class="form-control" />
+  
+      </div>
+      </div>
+
+
+      <div class="col-md-6 mb-4">
+        <div class="form-outline">
+          <label class="form-label" for="form3Example1">Nom technicien
+          </label>
+          <input type="text" name="technicianName" [(ngModel)]="user.technicianName" class="form-control" />
+  
+      </div>
+      </div>
+
+
+
+      <div class="col-md-6 mb-4">
+        <div class="form-outline">
+          <label class="form-label" for="form3Example1">Prenom technicien
+          </label>
+          <input type="text" name="nameTechnician" [(ngModel)]="user.nameTechnician" class="form-control" />
+  
+      </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="form-outline">
+          <label class="form-label" for="description-site">Description du site</label>
+          <textarea name="description" [(ngModel)]="user.description"  class="form-control" rows="5"></textarea>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="form-outline">
+          <label class="form-label" for="description-site">Adresse complète</label>
+          <textarea name="completeAddress" [(ngModel)]="user.completeAddress" class="form-control" rows="5"></textarea>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="form-outline">
+            <label for="categorie">Catégorie :</label>
+            <input type="text" name="category" [(ngModel)]="user.category" class="form-control" />
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+        <div class="form-outline">
+
+    <div class="form-group">
+        <label for="secteur">Secteur d'activité :</label>
+        <input type="text" name="activitySector" [(ngModel)]="user.activitySector" class="form-control" />
+      </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-6 mb-4">
+        <div class="form-outline">
+
+  
+        <label for="logo">Logo(120px/79px)</label>
+        <input type="file" class="form-control" id="profilePic" name="profilePic" (change)="onProfilePicChange($event)">
+
+      </div>
+
+  
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="form-outline">
+    <div class="form-group">
+        <label for="chiffre-affaires">Chiffre d'affaires (/mois) :</label>
+    
+        <input type="number" name="revenue" [(ngModel)]="user.revenue" class="form-control"  />
+      </div>
+        </div>
+    </div>
+  
+    <div class="col-md-6 mb-4">
+        <div class="form-outline">
+
+   
+
+        </div></div>
+
+
+</div>
+
+
+
+
+
+
+          </div>
+
+         
+
+
+          <button type="submit" class="btn btn-primary float-right" style="background-color: #007bff;">Valider</button>
+          <div *ngIf="isSuccessful" class="alert alert-success mt-3">
+            User registration successful!
+          </div>
+        </form>
+
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- Section: Design Block -->

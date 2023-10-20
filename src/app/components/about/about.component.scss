@@ -1,0 +1,34 @@
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ 
+
+  }
+  
+  .benefit-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .benefit-item:last-child {
+    margin-right: 0;
+  }
+  
+  .benefit-item i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #00BFFF; /* Vous pouvez changer la couleur ici */
+  }
+  
+  .benefit-item p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333; }
+    p {
+      font-size: 24px; /* taille de police de 20 pixels */
+    }
+    

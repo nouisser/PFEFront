@@ -1,0 +1,53 @@
+<div class="col-md-6 offset-md-3">
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label>Shop Name</label>
+        <input type="text" class="form-control" id="shopName" [(ngModel)]="site.shopName" name="shopName">
+      </div>
+      <div class="form-group">
+        <label>URL</label>
+        <input type="text" class="form-control" id="url" [(ngModel)]="site.url" name="url">
+      </div>
+      <div class="form-group">
+        <label>Technician Name</label>
+        <input type="text" class="form-control" id="technicianName" [(ngModel)]="site.technicianName" name="technicianName">
+      </div>
+      <div class="form-group">
+        <label>Description</label>
+        <input type="text" class="form-control" id="description" [(ngModel)]="site.description" name="description">
+      </div>
+      <div class="form-group">
+        <label>Category</label>
+        <input type="text" class="form-control" id="category" [(ngModel)]="site.category" name="category">
+      </div>
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="text" class="form-control" id="phoneNumberSite" [(ngModel)]="site.phoneNumberSite" name="phoneNumberSite">
+      </div>
+      <div class="form-group">
+        <label>Name Technician</label>
+        <input type="text" class="form-control" id="nameTechnician" [(ngModel)]="site.nameTechnician" name="nameTechnician">
+      </div>
+      <div class="form-group">
+        <label>Revenue</label>
+        <input type="number" class="form-control" id="revenue" [(ngModel)]="site.revenue" name="revenue">
+      </div>
+      <div class="form-group">
+        <label>Activity Sector</label>
+        <input type="text" class="form-control" id="activitySector" [(ngModel)]="site.activitySector" name="activitySector">
+      </div>
+      <div class="form-group">
+        <label>Email Site</label>
+        <input type="email" class="form-control" id="emailSite" [(ngModel)]="site.emailSite" name="emailSite">
+      </div> 
+      <div class="form-group">
+        <label>      completeAddress        </label>
+        <input type="email" class="form-control" id="emailSite" [(ngModel)]="site.completeAddress
+        " name="emailSite">
+      </div>
+      
+      
+      <button class="btn btn-success" type="submit">Submit</button>
+    </form>
+  </div>
+  

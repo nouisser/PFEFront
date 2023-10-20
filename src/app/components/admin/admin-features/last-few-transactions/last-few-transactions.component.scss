@@ -1,0 +1,22 @@
+.transactions {
+  .transactions {
+    border: 1px solid #5dadf3;
+    padding: 10px;
+    margin: 0 auto;
+    width: 80%;
+  }
+  
+  .table-bordered {
+    border: 1px solid #ccc;
+  }
+  
+  .table-bordered td,
+  .table-bordered th {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+  }
+}
